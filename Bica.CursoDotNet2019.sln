@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bica.CursoDotNet2019.Modelo", "Bica.CursoDotNet2019.Modelo\Bica.CursoDotNet2019.Modelo.vbproj", "{FB845872-B1F7-470B-96FC-63A693A1E8DB}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bica.CursoDotNet2019.Datos", "Bica.CursoDotNet2019.Datos\Bica.CursoDotNet2019.Datos.vbproj", "{A413886F-9B1A-4F98-9267-4155AA135AC4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bica.CursoDotNet2019.Negocio", "Bica.CursoDotNet2019.Negocio\Bica.CursoDotNet2019.Negocio.vbproj", "{23D0156D-7D02-4FB4-B508-5A36F0A93922}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bica.CursoDotNet2019.Utiles", "Bica.CursoDotNet2019.Utiles\Bica.CursoDotNet2019.Utiles.vbproj", "{654E4153-0217-4D95-A087-37E1E2DF1221}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bica.CursoDotNet2019.WinForm", "Bica.CursoDotNet2019.WinForm\Bica.CursoDotNet2019.WinForm.vbproj", "{6BB7BC07-4A32-4870-841C-38BF2027A9EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB845872-B1F7-470B-96FC-63A693A1E8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB845872-B1F7-470B-96FC-63A693A1E8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB845872-B1F7-470B-96FC-63A693A1E8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB845872-B1F7-470B-96FC-63A693A1E8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A413886F-9B1A-4F98-9267-4155AA135AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A413886F-9B1A-4F98-9267-4155AA135AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A413886F-9B1A-4F98-9267-4155AA135AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A413886F-9B1A-4F98-9267-4155AA135AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D0156D-7D02-4FB4-B508-5A36F0A93922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D0156D-7D02-4FB4-B508-5A36F0A93922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D0156D-7D02-4FB4-B508-5A36F0A93922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D0156D-7D02-4FB4-B508-5A36F0A93922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654E4153-0217-4D95-A087-37E1E2DF1221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654E4153-0217-4D95-A087-37E1E2DF1221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654E4153-0217-4D95-A087-37E1E2DF1221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654E4153-0217-4D95-A087-37E1E2DF1221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB7BC07-4A32-4870-841C-38BF2027A9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB7BC07-4A32-4870-841C-38BF2027A9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB7BC07-4A32-4870-841C-38BF2027A9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB7BC07-4A32-4870-841C-38BF2027A9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36D923FA-44AC-47F9-BABD-8E84841F4683}
+	EndGlobalSection
+EndGlobal
