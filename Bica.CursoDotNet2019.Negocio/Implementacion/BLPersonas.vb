@@ -6,8 +6,7 @@ Public Class BLPersonas
     Implements IPersonas
 
     Public Function GuardarVendedor(apellidos As String, nombres As String, telefono As Integer, documento As Integer, tipoContrato As String, sueldo As Decimal) As Long Implements IPersonas.GuardarVendedor
-        Throw New NotImplementedException()
-        Vendedor_DataModule.GuardarVendedor(apellidos, nombres, telefono, TipoDocumento.CUIT, documento, tipoContrato, sueldo)
+        Return Vendedor_DataModule.GuardarVendedor(apellidos, nombres, telefono, TipoDocumento.CUIT, documento, tipoContrato, sueldo)
 
 
     End Function

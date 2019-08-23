@@ -1,4 +1,5 @@
 ﻿Imports Bica.CursoDotNet2019.Modelo
+Imports Bica.CursoDotNet2019.Negocio
 Imports Bica.CursoNet.Model
 
 Module Module1
@@ -17,6 +18,7 @@ Module Module1
         Console.WriteLine("*****************************************************" + Environment.NewLine)
         Console.WriteLine("1 - Ejemplo de uso Select ***************************" + Environment.NewLine)
         Console.WriteLine("2 - Ejemplo listado de Personas *********************" + Environment.NewLine)
+        Console.WriteLine("3 - Guardar nuevo vendedor***** *********************" + Environment.NewLine)
         Console.WriteLine("*****************************************************" + Environment.NewLine)
         Console.WriteLine("9 - Salir *******************************************" + Environment.NewLine)
         Console.WriteLine("")
@@ -35,6 +37,9 @@ Module Module1
             Case 2
                 Console.WriteLine("Usted eligió ejemplo listado de Personas ***************************" + Environment.NewLine)
                 ImprimirListadoPersonas(CrearListadoPersonas())
+            Case 3
+                Console.WriteLine("Usted eligió ejemplo listado de Personas ***************************" + Environment.NewLine)
+                GuardarVandedor()
             Case 9
                 Environment.Exit(0)
             Case Else
@@ -124,5 +129,24 @@ Module Module1
             contador = contador + 1
         End While
 
+    End Sub
+
+    Private Sub GuardarVandedor()
+        Dim vendedor = New Vendedor()
+
+        vendedor.Apellidos = "Perez"
+        vendedor.Nombres = "Juan"
+        vendedor.Documento = 27558871
+        vendedor.Sueldo = 10.5
+        vendedor.Telefono = 421294
+        vendedor.TipoContrato = "c"
+        vendedor.TipoDocumento = Utiles.Enumerados.TipoDocumento.CUIT
+        vendedor.TipoPersona = Utiles.Enumerados.TipoPersona.VENDEDOR
+        vendedor.CalcularSueldo(100)
+
+        Dim blPersonas = New BLPersonas()
+        Dim idVendedor = blPersonas.GuardarVendedor(vendedor.Apellidos, vendedor.Nombres, vendedor.Telefono, vendedor.Documento, vendedor.TipoContrato, vendedor.Sueldo)
+        Console.WriteLine("Se guardó el vendedor con id {0}", idVendedor)
+        Console.WriteLine("Ingrese una opción y presiona enter: " + Environment.NewLine)
     End Sub
 End Module

@@ -1,6 +1,5 @@
 ﻿Imports Bica.CursoDotNet2019.Datos.Bica.CursoDotNet2019.Datos
 Imports Bica.CursoDotNet2019.Utiles.Enumerados
-Imports System.Data.Entity
 
 Public Module Vendedor_DataModule
 

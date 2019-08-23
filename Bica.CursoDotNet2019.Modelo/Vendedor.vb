@@ -13,10 +13,16 @@
         End Set
     End Property
 
+    'Public ReadOnly Property TipoDocumento() As Utiles.TipoDocumento
+    '    Get
+    '        Return MyBase.TipoDocumento
+    '    End Get
+    'End Property
+
     Public Sub CalcularSueldo(sueldoBase As Decimal)
-        If TipoContrato = "C" Then
+        If TipoContrato.ToUpper() = "C" Then
             Me.Sueldo = sueldoBase + 350
-        ElseIf TipoContrato = "N" Then
+        ElseIf TipoContrato.ToUpper() = "N" Then
             Me.Sueldo = sueldoBase + 750
         Else
             Me.Sueldo = 0

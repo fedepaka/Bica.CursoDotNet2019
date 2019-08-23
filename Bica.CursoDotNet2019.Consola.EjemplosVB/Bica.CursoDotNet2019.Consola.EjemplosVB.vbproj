@@ -48,7 +48,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Xml" />
@@ -105,11 +112,20 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bica.CursoDotNet2019.Modelo\Bica.CursoDotNet2019.Modelo.vbproj">
       <Project>{FB845872-B1F7-470B-96FC-63A693A1E8DB}</Project>
       <Name>Bica.CursoDotNet2019.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bica.CursoDotNet2019.Negocio\Bica.CursoDotNet2019.Negocio.vbproj">
+      <Project>{23D0156D-7D02-4FB4-B508-5A36F0A93922}</Project>
+      <Name>Bica.CursoDotNet2019.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bica.CursoDotNet2019.Utiles\Bica.CursoDotNet2019.Utiles.vbproj">
+      <Project>{654E4153-0217-4D95-A087-37E1E2DF1221}</Project>
+      <Name>Bica.CursoDotNet2019.Utiles</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
